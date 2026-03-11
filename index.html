@@ -487,36 +487,50 @@ const BUILTIN_SOUNDS = [
 // Organise par catégories !
 const SOUND_BUTTONS = [
   {
-    category: 'Bruitages',
+    category: 'Bruitages & Effets',
     icon: '💥',
     sounds: [
-      // { file:'boom.mp3',      name:'BOOM',       emoji:'💥' },
-      // { file:'airhorn.mp3',   name:'Air Horn',   emoji:'📯' },
-      // { file:'vine.mp3',      name:'Vine Boom',  emoji:'🌿' },
+      { file:'vine-boom.mp3',              name:'Vine Boom',              emoji:'💥' },
+      { file:'error.mp3',                  name:'Error',                  emoji:'❌' },
+      { file:'discord-call-sound.mp3',     name:'Discord Call',           emoji:'📞' },
+      { file:'hub-intro-sound.mp3',        name:'Hub Intro',              emoji:'🔊' },
+      { file:'gta-v-death-sound-effect.mp3',name:'GTA Death',             emoji:'💀' },
+      { file:'zipper-sound-effect.mp3',    name:'Zipper',                 emoji:'🤐' },
+      { file:'undertakers-bell.mp3',       name:'Undertaker Bell',        emoji:'🔔' },
+      { file:'among-us-role-reveal-sound.mp3',name:'Among Us Role',       emoji:'🚀' },
+      { file:'to-be-continued.mp3',        name:'To Be Continued',        emoji:'➡️' },
+      { file:'sus.mp3',                    name:'Sus',                    emoji:'📮' },
+      { file:'credit de fin.mp3',          name:'Credit de Fin',          emoji:'🎬' },
+      { file:'mii-channel-music.mp3',      name:'Mii Channel',            emoji:'🎮' },
+      { file:'ad.mp3',                     name:'Ad',                     emoji:'📺' },
     ]
   },
   {
-    category: 'Répliques',
+    category: 'Répliques FR',
     icon: '🗣️',
     sounds: [
-      // { file:'nani.mp3',      name:'NANI',       emoji:'😱' },
-      // { file:'bruh.mp3',      name:'Bruh',       emoji:'😐' },
+      { file:'ah-lala-melissa.mp3',                    name:'Ah Lala Melissa',            emoji:'😩' },
+      { file:'boubakaka_i5Trw0a.mp3',                  name:'Boubakaka',                  emoji:'🤣' },
+      { file:'chuiiii.mp3',                            name:'Chuiii',                     emoji:'😤' },
+      { file:'comment-ca-mon-reuf-sans-le-quoi.mp3',   name:'Mon Reuf Sans Le Quoi',      emoji:'😂' },
+      { file:'je-suis-le-laitier.mp3',                 name:'Je Suis Le Laitier',         emoji:'🥛' },
+      { file:'je-vais-te-toucher-la-nuit.mp3',         name:'Je Vais Te Toucher',         emoji:'👀' },
+      { file:'marine-le-pen-les-migrants.mp3',         name:'Marine Le Pen',              emoji:'🗳️' },
+      { file:'maskey-cheh.mp3',                        name:'Maskey Cheh',                emoji:'😎' },
+      { file:'oh-my-god-meme.mp3',                     name:'Oh My God',                  emoji:'😱' },
+      { file:'ouvre-la-porte.mp3',                     name:'Ouvre La Porte',             emoji:'🚪' },
+      { file:'tes-en-calecon-ta-la-barre.mp3',         name:'T'es En Calecon',           emoji:'🩲' },
+      { file:'the-kairi-78-mais-tu-va-la-fermer-ta-gueule.mp3', name:'Ferme Ta Gueule', emoji:'🤫' },
+      { file:'tu-touche-a-ma-sensibilite.mp3',         name:'Ma Sensibilite',             emoji:'💔' },
+      { file:'bon-anniversaire-les-ptits-indiens.mp3', name:'Bon Anniversaire',           emoji:'🎂' },
     ]
   },
   {
-    category: 'Musique',
-    icon: '🎵',
+    category: 'Anime',
+    icon: '⚡',
     sounds: [
-      // { file:'dramatic.mp3',  name:'Dramatic',   emoji:'🎻' },
-      // { file:'rickroll.mp3',  name:'Rick Roll',  emoji:'🎤' },
-    ]
-  },
-  {
-    category: 'Memes',
-    icon: '😂',
-    sounds: [
-      // { file:'mlg.mp3',       name:'MLG Horn',   emoji:'🎺' },
-      // { file:'tuturu.mp3',    name:'Tuturu',     emoji:'🔔' },
+      { file:'akatsuki-pain.mp3',  name:'Akatsuki Pain',  emoji:'💢' },
+      { file:'goku-drip.mp3',      name:'Goku Drip',      emoji:'🐉' },
     ]
   },
 ];
@@ -525,22 +539,29 @@ const SOUND_BUTTONS = [
 const BT_CATEGORIES = [
   {
     id:     'anime',
-    name:   'Animés / Manga',
-    icon:   '🐱',
+    name:   'Anime / Manga',
+    icon:   '⚡',
     color:  '#ff6b9d',
-    folder: './bt-anime/',
+    folder: './sounds/anime/',
     sounds: [
-      // { file:'attack-on-titan.mp3',  name:'Attack on Titan' },
-      // { file:'naruto.mp3',           name:'Naruto' },
-      // { file:'one-piece.mp3',        name:'One Piece' },
+      { file:'Berserk.mp3',                name:'Berserk' },
+      { file:'Dragon Ball .mp3',           name:'Dragon Ball' },
+      { file:'Erased.mp3',                 name:'Erased' },
+      { file:'Fire Force.mp3',             name:'Fire Force' },
+      { file:'GTO.mp3',                    name:'GTO' },
+      { file:'Hunter x Hunter.mp3',        name:'Hunter x Hunter' },
+      { file:'JoJos Bizarre Adventure.mp3',name:'JoJo's Bizarre Adventure' },
+      { file:'My Hero Academia.mp3',       name:'My Hero Academia' },
+      { file:'Sword Art Online.mp3',       name:'Sword Art Online' },
+      { file:'jujutsu kaisen.mp3',         name:'Jujutsu Kaisen' },
     ]
   },
   {
     id:     'jeux',
-    name:   'Jeux Vidéo',
+    name:   'Jeux Video',
     icon:   '🎮',
     color:  '#4080e0',
-    folder: './bt-jeux/',
+    folder: './sounds/jeux/',
     sounds: [
       // { file:'mario.mp3',            name:'Super Mario' },
       // { file:'zelda.mp3',            name:'Zelda' },
@@ -552,17 +573,17 @@ const BT_CATEGORIES = [
     name:   'Musique',
     icon:   '🎵',
     color:  '#ffe040',
-    folder: './bt-musique/',
+    folder: './sounds/musique/',
     sounds: [
       // { file:'song1.mp3',            name:'Nom de la chanson' },
     ]
   },
   {
     id:     'films',
-    name:   'Films / Séries',
+    name:   'Films & Series',
     icon:   '🎬',
     color:  '#40e080',
-    folder: './bt-films/',
+    folder: './sounds/films/',
     sounds: [
       // { file:'star-wars.mp3',        name:'Star Wars' },
       // { file:'pirates.mp3',          name:'Pirates des Caraïbes' },
@@ -570,7 +591,7 @@ const BT_CATEGORIES = [
   },
 ];
 
-const MEMES_PATH  = './memes/';
+const MEMES_PATH  = './sounds/buttons/';
 const SOUNDS_PATH = './sounds/';
 const BT_TIME     = 20;
 
@@ -1219,19 +1240,14 @@ document.getElementById('btStickyInput').addEventListener('input',e=>{document.g
 /* ══════════════════════════════════════════
    INIT
 ══════════════════════════════════════════ */
-// ── Pseudo modal logic ──
+// ── Pseudo modal ──
 function showNickModal(){
   document.getElementById('nickModal').classList.remove('hide');
   setTimeout(()=>document.getElementById('nickInput').focus(),80);
 }
 function applyNick(){
   const val=document.getElementById('nickInput').value.trim().toUpperCase().replace(/[^A-Z0-9_\- ]/g,'').slice(0,20);
-  if(val.length<2){
-    const inp=document.getElementById('nickInput');
-    inp.classList.add('err');
-    setTimeout(()=>inp.classList.remove('err'),400);
-    return;
-  }
+  if(val.length<2){const inp=document.getElementById('nickInput');inp.classList.add('err');setTimeout(()=>inp.classList.remove('err'),400);return;}
   NICK=val;
   try{localStorage.setItem('xenon_nick',NICK);}catch(e){}
   document.getElementById('nickModal').classList.add('hide');
@@ -1244,7 +1260,6 @@ document.getElementById('btnNickOk').addEventListener('click',applyNick);
 document.getElementById('nickInput').addEventListener('keydown',e=>{if(e.key==='Enter')applyNick();});
 document.getElementById('btnChangeNick').addEventListener('click',()=>{document.getElementById('nickInput').value=NICK;showNickModal();});
 
-// Load saved nick or show modal
 const savedNick=(()=>{try{return localStorage.getItem('xenon_nick')||'';}catch(e){return '';}})();
 if(savedNick&&savedNick.length>=2){
   NICK=savedNick;
